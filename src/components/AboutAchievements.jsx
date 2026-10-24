@@ -2,7 +2,7 @@ import { siteContent } from "../data/siteContent.js";
 
 export function AboutAchievements() {
   return (
-    <section className="section about-section" id="about">
+    <section className="section about-section stack-panel" id="about">
       <div className="section-heading">
         <p className="eyebrow">01 / About me</p>
         <h2>{siteContent.aboutTitle}</h2>

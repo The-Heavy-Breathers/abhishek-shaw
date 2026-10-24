@@ -28,7 +28,7 @@ export function ContactCTA() {
   }, []);
 
   return (
-    <section className="contact-section" id="contact">
+    <section className="contact-section stack-panel" id="contact">
       <p className="eyebrow">04 / Start a conversation</p>
       <h2>{siteContent.contactTitle}</h2>
       <a className="contact-button" href="#contact-details" ref={buttonRef}>

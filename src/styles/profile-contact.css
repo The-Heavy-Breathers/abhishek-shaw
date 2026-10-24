@@ -64,6 +64,12 @@
   text-align: center;
 }
 
+@media (min-width: 761px) {
+  .contact-section.stack-panel {
+    min-height: max(700px, 100svh);
+  }
+}
+
 .contact-section h2 {
   margin-bottom: 1.8rem;
 }

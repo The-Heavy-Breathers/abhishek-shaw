@@ -2,7 +2,7 @@ import { siteContent } from "../data/siteContent.js";
 
 export function OfferCards() {
   return (
-    <section className="section offers-section" id="offers">
+    <section className="section offers-section stack-panel" id="offers">
       <div className="section-heading section-heading-row">
         <div>
           <p className="eyebrow">02 / What I offer</p>

@@ -43,7 +43,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="hero" id="top" ref={heroRef} aria-labelledby="hero-title">
+    <section className="hero stack-panel" id="top" ref={heroRef} aria-labelledby="hero-title">
       {showVideo && prefersReducedMotion && siteContent.heroVideo.poster && (
         <img
           className="hero-video"

@@ -5,7 +5,10 @@ export function QuoteProfile() {
   const [imageStatus, setImageStatus] = useState("loading");
 
   return (
-    <section className="section profile-section" aria-labelledby="profile-title">
+    <section
+      className="section profile-section stack-panel"
+      aria-labelledby="profile-title"
+    >
       <div className="profile-wrap">
         <div
           className={`profile-photo-frame${imageStatus === "loaded" ? " is-loaded" : ""}`}

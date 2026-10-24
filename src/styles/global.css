@@ -111,6 +111,20 @@ a:focus-visible {
   padding: clamp(5rem, 10vw, 9rem) var(--page-gutter);
 }
 
+.stack-panel {
+  position: relative;
+  isolation: isolate;
+}
+
+.stack-panel.section {
+  width: 100%;
+  max-width: none;
+  padding-inline: max(
+    var(--page-gutter),
+    calc((100% - var(--content-width)) / 2 + var(--page-gutter))
+  );
+}
+
 .section-heading {
   margin-bottom: clamp(2rem, 5vw, 4rem);
 }
@@ -205,6 +219,24 @@ a:focus-visible {
   .footer-credit {
     grid-column: 2;
     grid-row: 1;
+  }
+}
+
+@media (min-width: 761px) {
+  .stack-panel {
+    min-height: max(700px, 100svh);
+  }
+
+  .about-section {
+    background: var(--pine);
+  }
+
+  .offers-section {
+    background: var(--charcoal);
+  }
+
+  .profile-section {
+    background: var(--pine);
   }
 }
 
