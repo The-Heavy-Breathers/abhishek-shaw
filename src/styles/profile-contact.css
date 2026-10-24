@@ -15,6 +15,9 @@
   aspect-ratio: 1;
   border: 1px solid rgb(244 240 230 / 18%);
   border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 38%, rgb(244 240 230 / 9%), transparent 52%),
+    var(--charcoal);
   overflow: hidden;
 }
 
@@ -22,17 +25,24 @@
   display: block;
   width: 100%;
   height: 100%;
+  opacity: 0;
   object-fit: cover;
+  transition: opacity 220ms ease;
+}
+
+.profile-photo-frame.is-loaded .profile-photo {
+  opacity: 1;
 }
 
 .profile-quote h2 {
   max-width: 48rem;
   margin: 1.2rem 0;
-  font-size: var(--font-size-display-large);
-  font-weight: var(--font-weight-extrabold);
+  color: var(--ochre);
+  font-family: var(--font-family-quote);
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-weight: var(--font-weight-regular);
   letter-spacing: var(--tracking-quote);
   line-height: var(--line-height-heading);
-  text-transform: uppercase;
 }
 
 .quote-attribution {

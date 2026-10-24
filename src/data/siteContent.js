@@ -20,7 +20,7 @@ export const siteContent = {
   offersDescriptionPrompt:
     "[Abhishek to provide: first-person details about workshops, community rides, and coaching]",
   profileImage: `${import.meta.env.BASE_URL}media/profile/profile_circular.png`,
-  profileQuote: "Mindset Makes the Impossible Possible.",
+  profileQuote: "Mindset makes the impossible possible.",
   quoteAttribution: "",
   quoteAttributionPrompt: "[Fill in: confirm quote attribution]",
   contactTitle: "Let’s get in touch.",

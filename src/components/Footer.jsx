@@ -17,7 +17,7 @@ export function Footer() {
           </svg>
         </a>
         <a
-          href="https://www.strava.com/abhishek-shaw"
+          href="https://www.strava.com/athletes/89056957"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Strava"
@@ -33,7 +33,7 @@ export function Footer() {
       </span>
       <span className="footer-credit">
         Made by{" "}
-        <a href="https://kushalarya.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://kushalarya.com/" target="_blank" rel="noopener noreferrer">
           Kushal Arya
         </a>
       </span>
