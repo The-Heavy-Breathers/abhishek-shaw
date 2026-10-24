@@ -1,9 +1,6 @@
 # Copilot project context
 
-- Read the relevant files in [`context/`](context/README.md) before designing or changing the website.
-- Write visitor-facing story and marketing copy as Abhishek speaking in first person (`I`, `me`, `my`). Do not narrate his story as an outsider (`Abhishek is...`, `he...`).
-- Use `[Abhishek to provide: ...]` for missing personal words or facts in source data. Never render these prompts or invent his story, achievements, opinions, or claims.
-- Treat `[Fill in]` as unknown. Ask before making decisions that affect content, brand, or behavior.
-- Never invent athlete facts, results, events, contact details, or activity data.
-- Keep the site clean, minimal, lightweight, and accessible.
-- Third-person references are fine in internal implementation notes and factual labels; they are not the voice of the public portfolio.
+- Read the relevant [website context](context/README.md) before changing the site.
+- Write visitor-facing narrative copy in Abhishek's first-person voice. Never invent or assume his story, achievements, offers, opinions, contact details, or activity data.
+- Keep missing personal copy marked `[Abhishek to provide: ...]` in source notes; never show prompts on the live site. Treat `[Fill in]` as unknown and ask before making content, brand, or behavior decisions.
+- Keep the site minimal, lightweight, responsive, and accessible.

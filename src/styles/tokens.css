@@ -1,8 +1,57 @@
+@font-face {
+  font-family: "Archivo";
+  src: url("/fonts/archivo-variable.woff2") format("woff2");
+  font-style: normal;
+  font-stretch: 62% 125%;
+  font-weight: 400 800;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-family-sans);
+  font-stretch: var(--font-stretch);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
+  --font-family-sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-stretch: 110%;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+  --font-size-4xl: clamp(2.3rem, 5vw, 5rem);
+  --font-size-display: clamp(2rem, 5vw, 4.2rem);
+  --font-size-display-large: clamp(2rem, 5vw, 4.7rem);
+  --font-size-hero: clamp(5rem, 16vw, 14rem);
+  --font-size-stat: clamp(0.95rem, 2vw, 1.3rem);
+  --font-size-art: clamp(4rem, 8vw, 7rem);
+  --font-size-watermark: 14rem;
+
+  --line-height-tight: 1;
+  --line-height-display: 0.84;
+  --line-height-heading: 1.05;
+  --line-height-body: 1.7;
+  --line-height-relaxed: 1.8;
+  --line-height-label: 1.5;
+
+  --tracking-body: 0.03em;
+  --tracking-brand: 0;
+  --tracking-display: 0;
+  --tracking-heading: 0;
+  --tracking-quote: 0.01em;
+  --tracking-label: 0.19em;
+  --tracking-wide: 0.1em;
 
   --pine: #14251f;
   --charcoal: #26332d;
@@ -15,4 +64,10 @@
 
   --page-gutter: clamp(1.25rem, 5vw, 5.5rem);
   --content-width: 1440px;
+}
+
+@media (max-width: 760px) {
+  :root {
+    --font-size-hero: clamp(5rem, 20vw, 9rem);
+  }
 }

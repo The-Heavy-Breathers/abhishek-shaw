@@ -72,11 +72,10 @@
 
 .hero-title {
   margin: 0;
-  font-family: "Arial Narrow", Impact, sans-serif;
-  font-size: clamp(5rem, 16vw, 14rem);
-  font-weight: 700;
-  letter-spacing: -0.055em;
-  line-height: 0.77;
+  font-size: var(--font-size-hero);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--tracking-display);
+  line-height: var(--line-height-display);
 }
 
 .hero-title span {
@@ -86,7 +85,7 @@
 .hero-caption {
   margin: 2.2rem 0 0;
   color: var(--pebble);
-  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+  font-size: var(--font-size-base);
 }
 
 .hero-bottom {
@@ -98,7 +97,7 @@
   justify-content: space-between;
   gap: 1rem;
   color: var(--pebble);
-  font-size: 0.7rem;
+  font-size: var(--font-size-xs);
 }
 
 .scroll-cue {
@@ -153,19 +152,19 @@
 
 .sport-panel > span:first-child {
   color: var(--pebble);
-  font-size: 0.58rem;
+  font-size: var(--font-size-xs);
 }
 
 .sport-panel strong {
-  font-family: "Arial Narrow", Impact, sans-serif;
-  font-size: clamp(0.95rem, 2vw, 1.3rem);
-  letter-spacing: 0.05em;
+  font-size: var(--font-size-stat);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
 }
 
 .sport-panel > span:last-child {
   color: var(--ochre);
-  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 }
 
 .sport-panel-2 > span:last-child {
@@ -183,17 +182,13 @@
   background: transparent;
   color: var(--pebble);
   cursor: pointer;
-  font-size: 0.65rem;
+  font-size: var(--font-size-xs);
 }
 
 @media (max-width: 760px) {
   .hero {
     min-height: max(720px, 100svh);
     padding-bottom: 13rem;
-  }
-
-  .hero-title {
-    font-size: clamp(5rem, 20vw, 9rem);
   }
 
   .sport-panels {
@@ -212,11 +207,10 @@
 
   .motion-toggle {
     min-width: 2.6rem;
-    font-size: 0.6rem;
   }
 
   .hero-bottom {
-    font-size: 0.62rem;
+    font-size: var(--font-size-xs);
   }
 
   .scroll-cue {

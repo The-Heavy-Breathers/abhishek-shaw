@@ -24,7 +24,6 @@ export const siteContent = {
   quoteAttribution: "",
   quoteAttributionPrompt: "[Fill in: confirm quote attribution]",
   contactTitle: "Let’s get in touch.",
-  footerThird: "",
   cards: [
     {
       id: "workshop",

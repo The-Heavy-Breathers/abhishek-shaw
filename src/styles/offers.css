@@ -8,8 +8,8 @@
 .section-aside {
   margin: 0 0 0.35rem;
   color: var(--pebble);
-  font-size: 0.78rem;
-  line-height: 1.7;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
 }
 
 .offers-section {
@@ -83,7 +83,7 @@
 .art-number {
   align-self: flex-start;
   color: var(--chalk);
-  font-size: 0.65rem;
+  font-size: var(--font-size-xs);
 }
 
 .art-mark {
@@ -91,14 +91,14 @@
   top: 50%;
   left: 50%;
   color: rgb(244 240 230 / 70%);
-  font-family: "Arial Narrow", Impact, sans-serif;
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: var(--font-size-art);
+  font-weight: var(--font-weight-extrabold);
   transform: translate(-50%, -50%);
 }
 
 .art-label {
   color: var(--chalk);
-  font-size: 0.62rem;
+  font-size: var(--font-size-xs);
 }
 
 .offer-copy {
@@ -107,9 +107,8 @@
 
 .offer-copy h3 {
   margin: 0.55rem 0;
-  font-family: "Arial Narrow", Impact, sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-extrabold);
   text-transform: uppercase;
 }
 
@@ -117,8 +116,8 @@
   min-height: 2.8rem;
   margin: 0;
   color: var(--pebble);
-  font-size: 0.78rem;
-  line-height: 1.7;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
 }
 
 .offer-action {
@@ -127,8 +126,8 @@
   align-items: center;
   margin-top: 1.25rem;
   color: var(--ochre);
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
 }
 
 .offer-action[aria-disabled="true"] {
@@ -157,10 +156,6 @@
     padding: 1rem;
   }
 
-  .offer-copy h3 {
-    font-size: 1.3rem;
-  }
-
   .offer-copy > p:not(.eyebrow) {
     min-height: auto;
   }
@@ -183,6 +178,5 @@
 
   .offer-action {
     gap: 0.4rem;
-    font-size: 0.63rem;
   }
 }
