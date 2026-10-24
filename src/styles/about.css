@@ -1,0 +1,83 @@
+.about-section {
+  padding-top: clamp(6rem, 12vw, 11rem);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: clamp(2rem, 8vw, 8rem);
+}
+
+.display-copy {
+  margin: 0;
+  font-family: "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+  text-transform: uppercase;
+}
+
+.display-copy span {
+  color: var(--moss);
+}
+
+.body-copy {
+  max-width: 29rem;
+  margin: 1.5rem 0 0;
+  color: var(--pebble);
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+.achievement-panel {
+  position: relative;
+  display: flex;
+  min-height: 20rem;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1.5rem;
+  border: 1px solid rgb(244 240 230 / 14%);
+  background:
+    linear-gradient(135deg, rgb(118 138 103 / 12%), transparent 55%),
+    var(--charcoal);
+}
+
+.achievement-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.achievement-title > span {
+  color: var(--ochre);
+}
+
+.achievement-empty {
+  margin: auto 0;
+  color: var(--pebble);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.achievement-mark {
+  position: absolute;
+  right: 1rem;
+  bottom: -3rem;
+  color: rgb(244 240 230 / 5%);
+  font-family: "Arial Narrow", Impact, sans-serif;
+  font-size: 14rem;
+  line-height: 1;
+}
+
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .achievement-panel {
+    min-height: 16rem;
+  }
+}

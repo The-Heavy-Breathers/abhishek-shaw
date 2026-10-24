@@ -1,0 +1,18 @@
+:root {
+  color-scheme: dark;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --pine: #14251f;
+  --charcoal: #26332d;
+  --chalk: #f4f0e6;
+  --pebble: #b6b5a8;
+  --ochre: #e2b84f;
+  --ember: #d86a45;
+  --teal: #3c8c88;
+  --moss: #768a67;
+
+  --page-gutter: clamp(1.25rem, 5vw, 5.5rem);
+  --content-width: 1440px;
+}

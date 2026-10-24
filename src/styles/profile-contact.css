@@ -1,0 +1,97 @@
+.profile-section {
+  padding-top: clamp(5rem, 10vw, 8rem);
+  padding-bottom: clamp(5rem, 10vw, 8rem);
+}
+
+.profile-wrap {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: clamp(2rem, 8vw, 8rem);
+}
+
+.profile-photo-placeholder {
+  display: grid;
+  width: min(100%, 20rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgb(244 240 230 / 18%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 45% 35%, rgb(118 138 103 / 28%), transparent 52%),
+    var(--charcoal);
+  color: var(--pebble);
+  font-size: 0.7rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.profile-quote h2 {
+  max-width: 48rem;
+  margin: 1.2rem 0;
+  font-family: "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(2rem, 5vw, 4.7rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.quote-attribution {
+  margin: 0;
+  color: var(--pebble);
+  font-size: 0.75rem;
+}
+
+.contact-section {
+  display: flex;
+  min-height: 24rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem var(--page-gutter) 6rem;
+  background:
+    radial-gradient(ellipse at 50% 130%, rgb(226 184 79 / 15%), transparent 55%),
+    var(--charcoal);
+  text-align: center;
+}
+
+.contact-section h2 {
+  margin-bottom: 1.8rem;
+}
+
+.contact-button {
+  display: inline-flex;
+  min-width: 13rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 1.2rem;
+  background: var(--ochre);
+  color: var(--pine);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.contact-button:hover {
+  background: var(--chalk);
+}
+
+.contact-arrow {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+@media (max-width: 760px) {
+  .profile-wrap {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-photo-placeholder {
+    width: min(65vw, 16rem);
+    justify-self: center;
+  }
+}

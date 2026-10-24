@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--pine);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--pine);
+  color: var(--chalk);
+}
+
+body,
+button,
+a {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 5px;
+}
+
+::selection {
+  background: var(--ochre);
+  color: var(--pine);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 20;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  transform: translateY(-180%);
+  background: var(--chalk);
+  color: var(--pine);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem var(--page-gutter);
+}
+
+.wordmark {
+  font-family: "Arial Narrow", Impact, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+}
+
+.wordmark span {
+  color: var(--ochre);
+}
+
+.header-link {
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--pebble);
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.section {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  padding: clamp(5rem, 10vw, 9rem) var(--page-gutter);
+}
+
+.section-heading {
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.section-heading h2,
+.contact-section h2 {
+  margin: 0.75rem 0 0;
+  font-family: "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(2.3rem, 5vw, 5rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  padding: 1.5rem var(--page-gutter) 2rem;
+  border-top: 1px solid rgb(244 240 230 / 13%);
+  color: var(--pebble);
+  font-size: 0.7rem;
+}
+
+.site-footer strong {
+  color: var(--chalk);
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
