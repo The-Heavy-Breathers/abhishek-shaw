@@ -10,20 +10,13 @@
   gap: clamp(2rem, 8vw, 8rem);
 }
 
-.profile-photo-placeholder {
-  display: grid;
+.profile-photo {
+  display: block;
   width: min(100%, 20rem);
   aspect-ratio: 1;
-  place-items: center;
   border: 1px solid rgb(244 240 230 / 18%);
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 45% 35%, rgb(118 138 103 / 28%), transparent 52%),
-    var(--charcoal);
-  color: var(--pebble);
-  font-size: 0.7rem;
-  line-height: 1.6;
-  text-align: center;
+  object-fit: cover;
 }
 
 .profile-quote h2 {
@@ -90,7 +83,7 @@
     gap: 2rem;
   }
 
-  .profile-photo-placeholder {
+  .profile-photo {
     width: min(65vw, 16rem);
     justify-self: center;
   }

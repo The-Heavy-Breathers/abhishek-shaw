@@ -7,7 +7,7 @@ export function Footer() {
       <span>
         Made by <strong>Kushal</strong>
       </span>
-      <span>{siteContent.footerThird}</span>
+      {siteContent.footerThird && <span>{siteContent.footerThird}</span>}
     </footer>
   );
 }

@@ -5,10 +5,12 @@ export function OfferCards() {
     <section className="section offers-section" id="offers">
       <div className="section-heading section-heading-row">
         <div>
-          <p className="eyebrow">02 / Find your next challenge</p>
+          <p className="eyebrow">02 / What I offer</p>
           <h2>{siteContent.offersTitle}</h2>
         </div>
-        <p className="section-aside">{siteContent.offersDescription}</p>
+        {siteContent.offersDescription && (
+          <p className="section-aside">{siteContent.offersDescription}</p>
+        )}
       </div>
       <div className="offer-grid">
         {siteContent.cards.map((card, index) => (
@@ -21,7 +23,7 @@ export function OfferCards() {
             <div className="offer-copy">
               <p className="eyebrow">{card.eyebrow}</p>
               <h3>{card.title}</h3>
-              <p>{card.description}</p>
+              {card.description && <p>{card.description}</p>}
               {card.href ? (
                 <a className="offer-action" href={card.href}>
                   {card.action} <span aria-hidden="true">↗</span>

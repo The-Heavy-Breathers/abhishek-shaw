@@ -15,10 +15,16 @@
 - Training offer: [Fill in]
 - Preferred language(s): [Fill in]
 
-## Facts to verify or add
+## Public voice
 
-- Short bio: [Fill in]
-- Long bio / story: [Fill in]
-- Credentials: [Fill in]
-- Contact details: [Fill in]
-- Social links: [Fill in]
+- Write Abhishek's visitor-facing story in first person, as Abhishek speaking directly to visitors.
+- Use only personal wording and claims he has supplied or confirmed.
+- Internal project notes may describe him in third person; do not use that narrator voice in the portfolio.
+
+## Personal content Abhishek must provide
+
+- Short introduction in his own words: [Abhishek to provide]
+- Personal story in his own words: [Abhishek to provide]
+- Credentials and how he wants them described: [Abhishek to provide]
+- Training offer and service details: [Abhishek to provide]
+- Contact details and social links: [Fill in]

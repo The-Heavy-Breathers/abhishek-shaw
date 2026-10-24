@@ -4,26 +4,28 @@ export function AboutAchievements() {
   return (
     <section className="section about-section" id="about">
       <div className="section-heading">
-        <p className="eyebrow">01 / The athlete</p>
+        <p className="eyebrow">01 / About me</p>
         <h2>{siteContent.aboutTitle}</h2>
       </div>
       <div className="about-grid">
         <div className="about-copy">
           <p className="display-copy">
-            Ultra cyclist.
-            <br />
-            Triathlete.
-            <br />
-            <span>Always moving forward.</span>
+            {siteContent.aboutLead}
           </p>
-          <p className="body-copy">{siteContent.aboutSummary}</p>
+          {siteContent.aboutSummary && (
+            <p className="body-copy">{siteContent.aboutSummary}</p>
+          )}
         </div>
         <div className="achievement-panel">
           <div className="achievement-title">
-            <p className="eyebrow">The miles so far</p>
+            <p className="eyebrow">My achievements</p>
             <span aria-hidden="true">↗</span>
           </div>
-          <p className="achievement-empty">{siteContent.achievementsPlaceholder}</p>
+          {siteContent.achievementsPlaceholder && (
+            <p className="achievement-empty">
+              {siteContent.achievementsPlaceholder}
+            </p>
+          )}
           <span className="achievement-mark" aria-hidden="true">
             +
           </span>

@@ -88,7 +88,9 @@ export function Hero() {
           <br />
           RUN<span>.</span>
         </h1>
-        <p className="hero-caption">{siteContent.heroCaption}</p>
+        {siteContent.heroCaption && (
+          <p className="hero-caption">{siteContent.heroCaption}</p>
+        )}
       </div>
       <div className="hero-bottom">
         <span>Endurance sport</span>
